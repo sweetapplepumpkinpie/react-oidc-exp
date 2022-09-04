@@ -13,7 +13,7 @@ const oidcConfig = {
   authority: 'https://accounts.google.com',
   clientId:
     '369781150356-4b4rj7ps0rmdcse515v98tonnupofsm5.apps.googleusercontent.com',
-  clientSecret: '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',
+  clientSecret: '',
   responseType: 'code',
   redirectUri:
     process.env.NODE_ENV === 'development'
