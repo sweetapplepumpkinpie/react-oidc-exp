@@ -11,9 +11,8 @@ const oidcConfig = {
     window.location.hash = ''
   },
   authority: 'https://accounts.google.com',
-  clientId:
-    '369781150356-4b4rj7ps0rmdcse515v98tonnupofsm5.apps.googleusercontent.com',
-  clientSecret: '',
+  clientId: process.env.REACT_CLIENT_ID,
+  clientSecret: process.env.REACT_CLIENT_SECRET,
   responseType: 'code',
   redirectUri:
     process.env.NODE_ENV === 'development'
